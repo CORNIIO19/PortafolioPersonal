@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+
+--color-primario:#000000;
+--color-secundario: #f6f6f6;
+--color-terciario:#22D4FD;
+
+--fuente-monteserrat: 'Montserrat', sans serif;
+--fuente-krona:'Krona One', sans serif;
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+
+    background-color: #000000;
+    color:#f6f6f6;
+    box-sizing: border-box;
+
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu{
+    display:flex;
+    gap: 80px;
+}
+
+.header__menu__link{
+    font-size: 1.25rem;
+    color: #22d4fd;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.header__menu__link:hover { 
+    color: #007bff
+}
+
+
+
+
+.proyectos{
+    width:100%;
+    display: flex;
+    padding: 6% 5%;
+    gap: 100px;
+    flex-flow: column wrap;
+    justify-content: center;
+
+}
+
+
+.proyectos__titulo{
+
+    color: #22D4FD;
+    font-size: 1.75rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.proyectos__tarjetas{
+    
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    flex-shrink: 2;
+    
+    
+}
+
+.proyecto{
+    width: 28%;
+    border-radius: 20px;
+    color:#F6F6F6;
+    display: flex;
+    justify-content: center;
+    gap:16px;
+    flex-direction: column;
+    background-color: #1A1A1A;
+    box-shadow: 0 4px 8px 0 rgba(34, 212, 253, 0.2), 0 6px 20px 0 rgba(34, 212, 253, 0.19);
+    /*opacity: 0.3;*/
+    /*box-shadow: 10px 10px 5px 12px lightblue;*/
+
+}
+
+.proyecto:hover{
+    background-color: #252525; /* un poco más claro */
+    transform: translateY(-4px); /* pequeño levantamiento */
+    box-shadow: 0 6px 24px rgba(34, 212, 253, 0.25);
+    border: 1px solid #22D4FD;
+}
+
+
+.proyecto__imagen__proyecto{
+    border-radius: 30px;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.proyecto__titulo{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.proyecto__descripcion{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    margin: 2% 5% 2% 5%;
+
+}
+
+.proyecto__tecnologias__titulo{
+    
+    font-family: "Montserrat", sans-serif;
+    margin: 2% 5% 0% 5%;
+    font-weight: 600;
+}
+
+.tecnologias__iconos{
+    padding-left: 20px;
+}
+
+.iconosTecnologia__icono{
+    width: 35px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.proyecto__enlaces{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+
+}
+
+
+.proyecto___enlaces__boton{
+
+    text-align: center;
+    padding: 15px 12px;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color:#000000;
+    border: 2px solid #22d4fd;
+    display: flex;
+    justify-content: center;
+    background-color: #22D4FD;
+    align-items: center;
+
+}
+
+.proyecto__enlaces__boton__github{
+    width: 25px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.proyecto__enlaces__boton__redimencionar{
+    width: 25px;
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer{
+    background-color: #000000;
+    padding: 3% 15% 0 15%;
+    border-top: 0.3px solid #22d4fd;
+    /* etiquetas de la distribucion de las secciones del footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__columna{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer__seccion1{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    color: #ffffff;
+    
+}
+
+.Indice__titulo{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #22D4FD;
+    padding-bottom: 5%;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    padding-bottom: 4%;
+    font-size: .8rem;
+    font-weight: 400;
+    
+}
+
+
+.footer__seccion2{
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+    justify-content: center;
+    padding-bottom: 5%;
+    flex-direction: column;
+}
+
+.seccion2__despedida{
+    font-family: 'Montserrat', sans-serif;
+    color: #22D4FD;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.footer__imagen{
+    width: 20%;
+}
+
+.footer__seccion3{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__seccion3 a{
+    text-decoration: none;
+}
+
+.seccion3__contenido p {
+    color:#f6f6f68b;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: .8rem;
+    padding-bottom: 5%;
+    font-weight: 500;
+}
+
+.seccion3__redes a {
+    padding-right: 3%;
+    
+
+}
+
+@media (max-width: 1023px){
+
+    .header__menu{
+        gap: 60px;
+    }
+
+    .header__menu__link{
+        font-size: 1rem;
+    }
+
+    .proyectos{
+        gap:50%;
+    }
+
+    .proyectos__titulo{
+        font-size: 1.3rem;
+    }
+
+    .proyectos__tarjetas{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .proyecto{
+        width: 100%;
+    }
+
+    .proyecto__enlaces__boton__redimencionar{
+        padding-right: 15px;
+    }
+
+    .footer__columna{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer__seccion1{
+    text-align: center;
+}
+
+.footer__seccion3{
+    text-align: center;
+}
+
+.footer__imagen{
+    width: 40%;
+}
+
+.seccion3__redes img{
+    width: 8%;
+}
+
+}
